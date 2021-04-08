@@ -1,0 +1,80 @@
+.logoimg {
+
+    border-radius: 8px;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 30%;
+    
+    height: 100%;
+    object-fit: cover;
+}
+
+.wh {
+    margin: 0px;
+    margin-top: 20px;
+    height: 350px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+@keyframes anim1 {
+    from {
+        color: transparent;
+        margin-left: 300px;
+    }
+
+    to {
+        color: rgb(0, 0, 0);
+        margin-left: 0px;
+    }
+}
+
+@keyframes anim2 {
+    from {
+        color: transparent;
+    }
+
+    to {
+        color: rgb(0, 0, 0);
+    }
+}
+
+.blackbottom {
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+}
+.marquee{
+    background-color: rgb(255, 255, 255);
+    columns: white;
+    width: 80%;
+    margin-left: 10%;
+    height: 100px;
+    overflow: hidden;
+}
+.marquee-content{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: animM1 20s linear infinite;
+
+}
+@keyframes animM1{
+    0%{
+        transform: translateX(80%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.marquee-content li{
+    color: cornsilk;
+    border: 3px;
+    width: 10%;
+    height: 20px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: blue;
+}
